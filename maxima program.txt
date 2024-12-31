@@ -1,0 +1,56 @@
+
+1. Create and Transform Vectors and Matrices:
+A: matrix([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+transpose(A); /* Transpose */
+conjugate(transpose(A)); /* Conjugate transpose */
+
+2. Generate Matrix into Echelon Form and Find Rank:
+A: matrix([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+echelon_form(A); /* Echelon form */
+rank(A); /* Rank of the matrix */
+
+3. Find Cofactors, Determinant, Adjoint, and Inverse:
+determinant(A); /* Determinant */
+adjoint(A); /* Adjoint */
+invert(A); /* Inverse */
+
+4. Solve Systems of Equations (Homogeneous and Non-Homogeneous):
+/* Example for homogeneous system */
+A: matrix([2, 1], [1, -1]);
+b: matrix([0], [0]);
+linear_solve(A, b); /* Solution for Ax = b */
+
+/* Non-homogeneous system */
+b: matrix([3], [1]);
+linear_solve(A, b);
+
+5. Solve Homogeneous Equations Using Gauss-Jordan:
+augmented_matrix: augment(A, b);
+gauss_jordan(augmented_matrix);
+
+6. Generate Basis of Column Space, Null Space, etc.:
+columnspace(A); /* Column space */
+nullspace(A); /* Null space */
+
+7. Check Linear Dependence of Vectors and Transition Matrix:
+is_dependent([vector1, vector2]); /* Check dependence */
+
+8. Find Orthonormal Basis Using Gram-Schmidt:
+gram_schmidt([vector1, vector2]); /* Orthonormal basis */
+
+9. Check Diagonalizability and Verify Cayley-Hamilton:
+eigenvalues(A); /* Eigenvalues */
+cayley_hamilton(A); /* Verify theorem */
+
+10. Application: Encoding and Decoding Messages:
+encode("Linear Algebra is fun", A); /* Use a nonsingular matrix */
+decode(encoded_message, A);
+
+11. Compute Gradient of a Scalar Field:
+grad(f, [x, y, z]); /* Gradient of f(x, y, z) */
+
+12. Compute Divergence of a Vector Field:
+div([fx, fy, fz], [x, y, z]); /* Divergence */
+
+13. Compute Curl of a Vector Field:
+curl([fx, fy, fz], [x, y, z]); /* Curl */

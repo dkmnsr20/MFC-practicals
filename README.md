@@ -3,4 +3,4 @@
 Need help contact dkmnsr20@gmail.com
 
 
-Delhi University B.Sc(H) Computer Maths for Computing Practicals Sem 1
+Delhi University B.Sc(H) Computer science Maths for Computing Practicals Sem 1
